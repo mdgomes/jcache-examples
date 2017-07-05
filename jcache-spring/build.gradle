@@ -29,5 +29,5 @@ dependencies {
 }
 
 jar {
-    baseName = 'spring-cache'
+    archiveName = 'spring-cache.jar'
 }
