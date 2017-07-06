@@ -28,6 +28,4 @@ public class GuestRestController {
         return ResponseEntity.ok().body(charges);
     }
 
-    //CACHE funktioniert nicht
-    
 }
