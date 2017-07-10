@@ -14,6 +14,11 @@ To build the war file run
 
 Deploy the application according to the specific application server used.
 
+To call the API from the command line type the following:
+```
+curl -G http://localhost:8080/j-cache-app/jcachesample/guests/{id}/balance
+```
+
 ## jcache-payara
 
 This project generates an uber jar which contains Payara Micro. Since both hazelcast and JSR107 are offered by Payara out of the box, these dependencies are not needed to be explicitly specified on the project.
@@ -30,6 +35,10 @@ To run the application
 java -jar build/libs/payara-cache.jar
 ```
 
+To call the API from the command line type the following:
+```
+curl -G http://localhost:8080/payara-cache/jcachesample/guests/{id}/balance
+```
 
 ## jcache-spring
 
@@ -45,4 +54,9 @@ To run the application
 
 ```
 java -jar spring-cache.jar
+```
+
+To call the API from the command line type the following:
+```
+curl -G localhost:8080/guests/{id}/balance
 ```
